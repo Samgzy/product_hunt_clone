@@ -1,6 +1,8 @@
 Rails.application.routes.draw do
+  get 'products/index'
+
   devise_for :users
-  root to: 'pages#home'
+  root to: 'products#index'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
